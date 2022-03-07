@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>site</title>
+    <title>O meu projeto</title>
     <style>
-        title {font-family: Arial;}
-        body { text-align: center; font-family: fantasy; background-color: orangered; }
-        p { color: #444;}
-        p.paragrafo { font-size: 20px;}
-        a {text-decoration: none;}
-        a:hover { color: purple;}
+        title {font-family: Arial; }
+        body { text-align: center; font-family: fantasy; background-color: grey; }
+        p { color: #a00; }
+        p.paragrafo { font-size: 20px; }
+        a {text-decoration: none ; }
+        a:hover { color: purple; }
+        video { position: absolute; left: 200px; }
+        p.paragrafo2 { text-align: right; font-size: 20px;}
+        button.play {position: absolute; right:510px; top: 495px;}
+        button.pause {position: absolute; right: 500px; top: 520px;} 
     </style>
 </head>
+
 <body>
     <h1>Site usando CSS</h1> 
     <p class="paragrafo">Um exemplo de site html com CSS.<br>
-    Um link para o site da <a href="https://www.eliti.com.br/">Eliti</a>.<br> 
+    Um link para o site da <a href="https://www.eliti.com.br/">Eliti</a>. <br> 
     E a foto de um gato <br>
     <img src="download.jfif" alt="Gato"></p> 
+    <p class="paragrafo">Olá está é a segunda parte do meu projeto <br>
+    Eu já aprendi muita coisa nesse pouco tempo que estou aprendendo sobre HTML e CSS <br>
+    Mesmo sendo a parte básica do curso, já me sinto capaz de fazer coisas que normalmente eu não conseguiria fazer antes</p>
     
+    <p class="paragrafo2">
+        <video id="myVideo" width="520" height="300">
+        <source src="yt1s.com - Reveal Trailer  Official Call of Duty Black Ops 2.mp4" type="video/mp4">
+      </video> <br>
+      Este é um exemplo de video a partir do uso do CSS <br>
+      E também com botões de play e pause usando javascript <br>
+      E é o trailer do meu jogo favorito: Call of Duty Black Ops 2 <br>
+     
+      <button class="play" onclick="playVid()" type="button">Play Video</button>
+      <button class="pause" onclick="pauseVid()" type="button">Pause Video</button><br> 
+    </p>
     
+    <script>
+        console.log(num)
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+        var vid= document.getElementById("myVideo");
+        var num=200
+
+    </script>
+     
     </body>
 </html>
